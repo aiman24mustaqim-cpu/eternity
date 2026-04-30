@@ -1,0 +1,20 @@
+# Dependencies — don't upload these big folders
+node_modules/
+.npm
+
+# Secret files — NEVER upload
+.env
+.env.local
+.env.production
+
+# Build output
+dist/
+.next/
+out/
+
+# Upload folder
+backend/uploads/
+
+# OS files
+.DS_Store
+Thumbs.db

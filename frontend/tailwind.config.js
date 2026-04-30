@@ -1,19 +1,24 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+// tailwind.config.js
+module.exports = {
+  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        ivory: '#FAF7F2',
+        champagne: '#E8D5B7',
+        gold: { DEFAULT: '#C9A96E', light: '#E2C99A', dark: '#A07840' },
+        sage: { DEFAULT: '#8A9E8C', light: '#B5C4B6' },
+        blush: '#E8C4B8',
+        dusty: '#C4847A',
+        charcoal: '#2C2825',
+        'warm-gray': '#6B6560',
+      },
+      fontFamily: {
+        cormorant: ['var(--font-cormorant)', 'serif'],
+        'dm-sans': ['var(--font-dm-sans)', 'sans-serif'],
+        'great-vibes': ['var(--font-great-vibes)', 'cursive'],
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
